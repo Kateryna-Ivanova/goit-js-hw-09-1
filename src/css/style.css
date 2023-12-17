@@ -34,8 +34,8 @@ body {
   align-items: flex-start;
   gap: 16px;
   border-radius: 8px;
-  background: #dca7f8;
-  /* background: #fff; */
+  /* background: #dca7f8; */
+  background: #fff;
 }
 .label-form {
   /* color: #2e2f42;

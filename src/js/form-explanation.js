@@ -26,8 +26,8 @@ function shouData() {
     if (dataForm) {
     //  Если данные найдены в локальном хранилище (т. е. dataForm не имеет значения null или undefine) то...
     const {elements: { email, message },} = form;
-        // глибока деструктуризація (извлечения свойства elements из объекта формы.
-        // elements- объект, содержащий элементы формы email и message)
+        // глибока деструктуризація 
+        // в form есть elements- объект, содержащий элементы формы email и message)
     email.value = dataForm.email;
         message.value = dataForm.message;
         // заполняем поля формы ранее сохраненными данными.
@@ -62,11 +62,6 @@ function onFormSubmit(evt) {
 
 //  <!-- "build": "vite build --base=/vanilla-app-template/", В файлі package.json змінила це значення -->
 //   <!-- <load="partials /header.html" /> -->
-
-
-//   <!-- Loads the specified .html file -->
-//   <!-- <load="partials /vite-promo.html" /> -->
-
 
 
 

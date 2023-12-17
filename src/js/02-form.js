@@ -15,9 +15,7 @@ function onInputData(evt) {
 function shouData() {
   let dataForm = JSON.parse(localStorage.getItem(KEY_FORM_INPUT));
   if (dataForm) {
-    const {
-      elements: { email, message },
-    } = form;
+    const {elements: { email, message },} = form;
     email.value = dataForm.email;
     message.value = dataForm.message;
   }
@@ -25,9 +23,7 @@ function shouData() {
 
 function onFormSubmit(evt) {
   evt.preventDefault();
-  const {
-    elements: { email, message },
-  } = evt.currentTarget;
+  const {elements: { email, message },} = evt.currentTarget;
 
   if (email.value.trim() === '' || message.value.trim() === '') {
     return alert('Заповніть всі поля');
